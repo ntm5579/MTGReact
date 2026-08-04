@@ -9,6 +9,15 @@ function App() {
 
   return (
     <>
+      <div className="topNav">
+        <div className="topNavBorder">
+          <nav>
+            <a>Test 1</a>
+            <a>Test 2</a>
+            <a>Test 3</a>
+          </nav>
+        </div>
+      </div>
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
