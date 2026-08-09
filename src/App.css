@@ -25,14 +25,13 @@ div.topNav {
   z-index: 1000;
 }
 
-div.topNavBorder {
-  background-color: #ffffff;
-  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%, 0 0);
-}
-
 nav{
   background-color: #000000;
-  clip-path: polygon(5% 0, 95% 0, 75% 95%, 25% 95%, 5% 0);
+  clip-path: polygon(5% 0, 95% 0, 85% 95%, 15% 95%, 5% 0);
+}
+
+ul li{
+  text-align: left;
 }
 
 a{
