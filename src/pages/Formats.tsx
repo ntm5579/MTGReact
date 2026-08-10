@@ -6,7 +6,8 @@ function Formats() {
       <Nav/>
       <div>
         <h1>Formats</h1>
-        <p>Here are the different formats you can play...</p>
+          <h2>1's</h2>
+          <h2>Commander</h2>
       </div>
     </>
   )

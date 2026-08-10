@@ -8,7 +8,7 @@ function App() {
     <>
       <Nav />
       <div>
-        <h1>Welcome to the App</h1>
+        <h1>Learn how to play Magic: The Gathering</h1>
           <ul>
             <li>
               Game
@@ -42,6 +42,11 @@ function App() {
 
           <li>Building A Deck</li>
 
+        </ul>
+
+        <ul> To Do
+          <li>Card Diagram with hover descriptions</li>
+          <li>Make a standard component and pass vars into each one. Number of players, deck size, and other rules can vary between formats.</li>
         </ul>
       </div>
     </>

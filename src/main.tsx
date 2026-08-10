@@ -8,6 +8,7 @@ import GameRules from './pages/GameRules.tsx'
 import Formats from './pages/Formats.tsx'
 import Cards from './pages/Cards.tsx'
 import BuildingADeck from './pages/BuildingADeck.tsx'
+import WaysToPlay from './pages/WaysToPlay.tsx'
 
 const router = createBrowserRouter([
   {path: "/", element: <App />},
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
   {path: "/formats", element: <Formats />},
   {path: "/cards", element: <Cards />},
   {path: "/building-a-deck", element: <BuildingADeck />},
+  {path: "/how-to-play", element: <WaysToPlay />},
 ]);
 
 createRoot(document.getElementById('root')!).render(

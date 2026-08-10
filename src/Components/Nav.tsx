@@ -7,6 +7,7 @@ function Nav() {
           <Link to="/formats">Formats</Link>
           <Link to="/cards">Cards</Link>
           <Link to="/building-a-deck">Building a Deck</Link>
+          <Link to="/how-to-play">How to Play</Link>
         </nav>
     )
 }
