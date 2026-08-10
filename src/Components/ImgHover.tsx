@@ -24,7 +24,7 @@ function ImgHover({ src, hovers, width, height }: { src: string; hovers: Hover[]
                             left: hover.startingCoordinates.x, 
                             width: hover.width, 
                             height: hover.height, 
-                            border:"3px dashed black",
+                            border:"3px dashed blue",
                             borderRadius: "1vh",
                         }}>
                         {<span className="tooltiptext">
