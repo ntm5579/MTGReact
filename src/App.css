@@ -30,7 +30,11 @@ nav{
   clip-path: polygon(5% 0, 95% 0, 85% 95%, 15% 95%, 5% 0);
 }
 
-ul li{
+li{
+  text-align: left;
+}
+
+.hover-item{
   text-align: left;
 }
 
