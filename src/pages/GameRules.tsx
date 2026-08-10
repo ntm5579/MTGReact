@@ -1,4 +1,14 @@
 import Nav from "../Components/Nav"
+import ImgHover from "../Components/ImgHover"
+import Hover from "../Models/Hover"
+
+const deckHovers: Hover[] = [
+    new Hover(undefined, "Prep Phase: The first phase of a turn. Used to reset from previous turns and prepare for the remainder of your turn.", { x: 0, y: 0 }, 165, 60, "gray"),
+    new Hover(undefined, "Main Phase 1: Your first of two opportunities this turn to play creatures, enchantments, and sorceries. You can play as many cards as you would like, as long as you can pay the mana cost. You may also play a land card during your main phase, but you can only play one per turn (card abilities not withstanding)", { x: 0, y: 0 }, 60, 60),
+    new Hover(undefined, "Combat Phase: The phase where you can attack your opponent with your creatures. Your opponent will have the opportunity to block your attacking creatures with their own.", { x: 0, y: 0 }, 270, 60, "red"),
+    new Hover(undefined, "Main Phase 2: Your second of two opportunities this turn to play creatures, enchantments, and sorceries. Refer to main phase 1 for restrictions on what you can play.", { x: 0, y: 0 }, 60, 60),
+    new Hover(undefined, "End Phase: The final phase of a turn. If you have more than 7 cards in your hand, you must put cards of your choosing into the graveyard until you are down to 7 cards.", { x: 0, y: 0 }, 60, 60, "gray")
+]
 
 function GameRules() {
   return (
@@ -10,7 +20,18 @@ function GameRules() {
                     <p>Draw 7 cards. Mulligan if you're not satisfied with your hand.</p>
                 <h2>Turns</h2>
                     <p>Turns consist of 5 phases, some containing subphases.</p>
-                    <img src="src\assets\CockatriceTurns.png" alt="Turn UI from Simulator" style={{ width: '5%', height: 'auto' }}/>
+                    <div
+                        style={{
+                            marginLeft: "5vw",
+                        }}>
+                        <ImgHover 
+                            src="src/assets/CockatriceTurns.png" 
+                            hovers={deckHovers} 
+                            width={"6vw"} 
+                            height={"70vw"} 
+                            tooltipLocation={"right"}
+                        />
+                    </div>
                 <h3>Phases</h3>
                     <ol>
                         <li><h4>Prep</h4></li>
