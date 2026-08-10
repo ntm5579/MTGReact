@@ -91,3 +91,16 @@
   visibility: visible;
   opacity: 1;
 }
+
+.img-hover-content {
+  display: inline-block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-hover-content .hover-item {
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
