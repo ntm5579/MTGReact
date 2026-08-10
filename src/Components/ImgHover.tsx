@@ -1,4 +1,5 @@
 import Hover from "../Models/Hover";
+import "../Components/tooltip.css"
 
 function ImgHover({ src, hovers, width, height }: { src: string; hovers: Hover[]; width?: any; height?: any }) {
     return (
@@ -13,9 +14,9 @@ function ImgHover({ src, hovers, width, height }: { src: string; hovers: Hover[]
             }}>
             <div style={{ width: "100%", height: "100%" }}>
                 {hovers.map((hover, index) => (
-                    <div 
+                    <div
                         key={index} 
-                        className="hover-item" 
+                        className="hover-item tooltip" 
                         style={{ 
                             display: "flex",
                             position: "relative",
@@ -25,7 +26,7 @@ function ImgHover({ src, hovers, width, height }: { src: string; hovers: Hover[]
                             height: hover.height, 
                             border:"3px solid black"  
                         }}>
-                        {/*hover.text*/}
+                        {<span className="tooltiptext">{hover.text}</span>}
                     </div>
                 ))}
             </div>
