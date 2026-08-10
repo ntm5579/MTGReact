@@ -6,12 +6,14 @@ type Coordiantes = {
 export default class Hover {
     [x: string]: any;
     constructor(
-        text: string,
+        title: string,
+        description: string,
         startingCoordinates: Coordiantes,
         height: number,
         width: number
     ) {
-        this.text = text;
+        this.title = title;
+        this.description = description; 
         this.startingCoordinates = startingCoordinates;
         this.height = height;
         this.width = width;
@@ -20,5 +22,6 @@ export default class Hover {
     startingCoordinates!: Coordiantes
     height!: number
     width!: number
-    text!: string
+    title!: string
+    description!: string
 }
